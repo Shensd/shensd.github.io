@@ -85,7 +85,12 @@ body, html, * {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
+.contact h1 {
+    color: #080808;
+}
+.contact .container { background-color: #edf1f4; padding: 30px}
 
 @media(max-width: 520px) {
     .container-pane {

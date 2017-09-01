@@ -1,7 +1,11 @@
-$(document).ready(function() {
+function size() {
     var height = ($(window).height() - 20) + "px";
     $(".jumbotron-top, .about, .contact").css("height", height);
+}
 
+$(document).ready(function() {
+    size();
+    $(window).resize(size);
 
     $("#btn-top").click(function() {scrollTo("#top")});
     $("#btn-languages").click(function() {scrollTo("#languages")});
