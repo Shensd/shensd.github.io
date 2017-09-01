@@ -1,5 +1,3 @@
 # shensd.github.io
 
-This is a rough making of my portfolio website to show my skills and such to future employers. *wink wink*
-
-This was actually mostly made as a way for me to get a good feel with bootstrap.
+## This is a website simply built to showcase some of my programming talents. It can be viewed [here](http://jackhance.me).
