@@ -21,6 +21,7 @@ body, html, * {
         );
 }
 .vert-stripes .container { background-color: #edf1f4; }
+
 .angle-stripes {
     background: repeating-linear-gradient(
         45deg,
@@ -30,6 +31,18 @@ body, html, * {
         #edf1f4 20px
         );
 }
+
+/*
+.angle_stripes {
+    background: repeating-linear-gradient(
+        45deg,
+        #54585b,
+        #54585b 10px,
+        #edc1f4 10px,
+        #edc1f4 20px
+    );
+}
+*/
 .angle-stripes .container { background-color: #edf1f4; }
 .horizontal-stripes {
     background: repeating-linear-gradient(
