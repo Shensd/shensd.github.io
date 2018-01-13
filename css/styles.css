@@ -92,7 +92,7 @@ body, html, * {
 }
 .contact .container { background-color: #edf1f4; padding: 30px}
 
-@media(max-width: 520px) {
+@media(max-width: 545px) {
     .container-pane {
         height: 400px;
     }
