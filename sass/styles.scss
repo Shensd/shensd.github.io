@@ -1,6 +1,6 @@
-$block-dark:       #1a1b1c;
-$block-light:      #edf1f4
-$stripe-primary:   #f9b6ff;
+$block-dark: #1a1b1c;
+$block-light: #edf1f4;
+$stripe-primary: #f442b0;
 $stripe-secondary: #edf1f4;
 
 body, html, * {
@@ -16,8 +16,6 @@ body, html, * {
     background-color: $block-light;
     color: $block-dark;
 }
-/* #f9b6ff */
-/* #54585b */
 .vert-stripes {
     background: repeating-linear-gradient(
         90deg,
@@ -89,13 +87,13 @@ body, html, * {
 }
 .contact .container { background-color: $block-light; padding: 30px}
 
-@media(max-width: 545px) {
-    .container-pane {
-        height: 400px;
+@media(max-width: 560px) {
+    .container-pane, .container-mid {
+        height: 400px !important;
     }
 }
 @media(max-width: 350px) {
-    .container-pane {
-        height: 500px;
+    .container-pane, .container-mid {
+        height: 500px !important;
     }
 }

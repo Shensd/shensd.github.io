@@ -1,6 +1,9 @@
 function size() {
-    var height = ($(window).height() - 20) + "px";
-    $(".jumbotron-top, .about, .contact").css("height", height);
+    var height = ($(window).height() - 20);
+    $(".jumbotron-top, .about, .contact").css("height", height + "px");
+    if($(window).width() > 560) {
+        $(".container-mid").css("height", (height/2) + "px");
+    }
 }
 
 $(document).ready(function() {

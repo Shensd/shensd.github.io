@@ -1,6 +1,5 @@
 let canvas, gl, img;
 let program_info;
-let buffers;
 
 const shader_vertex = `
     attribute vec4 aVertexPosition;
@@ -25,6 +24,7 @@ const shader_fragment = `
     }
 `;
 
+/*
 const positions = [
     // Front face
     -1.0, -1.0, 1.0,
@@ -60,19 +60,87 @@ const positions = [
     -1.0, -1.0, -1.0,
     -1.0, -1.0, 1.0,
     -1.0, 1.0, 1.0,
-    -1.0, 1.0, -1.0,
+    -1.0, 1.0, -1.0
 ];
-
 let colors = [
-    [0.98, 0.71, 1.0, 1.0],
-    [0.98, 0.71, 1.0, 1.0],
-    [0.98, 0.71, 1.0, 1.0],
-    [0.98, 0.71, 1.0, 1.0],
-    [0.98, 0.71, 1.0, 1.0],
-    [0.98, 0.71, 1.0, 1.0],
+    [255, 000, 000, 1.0],
+    [255, 119, 000, 1.0],
+    [233, 255, 000, 1.0],
+    [000, 255, 000, 1.0],
+    [000, 000, 255, 1.0],
+    [165, 000, 255, 1.0]
+];
+*/
+
+let sides_triangle = 4;
+const positions_triangle = [
+    //front
+    0.0, 1.0, 0.0,
+    -1.0, -1.0, 1.0,
+    1.0, -1.0, 1.0,
+
+    //left
+    0.0, 1.0, 0.0,
+    -1.0, -1.0, -1.0,
+    -1.0, -1.0, 1.0,
+
+    //back
+    0.0, 1.0, 0.0,
+    -1.0, -1.0, -1.0,
+    1.0, -1.0, -1.0,
+
+    //right
+    0.0, 1.0, 0.0,
+    1.0, -1.0, 1.0,
+    1.0, -1.0, -1.0
+
+];
+let colors_triangle = [
+    [255, 000, 000, 1.0],
+    [000, 000, 255, 1.0],
+    [000, 255, 000, 1.0],
+    [000, 000, 255, 1.0]
 ];
 
+let sides_base = 1;
+const positions_base = [
+    //triangle 1
+    -1.0, -1.0, -1.0,
+    1.0, -1.0, -1.0,
+    1.0, -1.0, 1.0,
 
+    //triangle 2
+    1.0, -1.0, 1.0,
+    -1.0, -1.0, 1.0,
+    -1.0, -1.0, -1.0
+];
+let colors_base = [
+    [255, 000, 000, 1.0]
+];
+
+let shapes = [];
+
+function build_solid(gl, positions, sides, colors, scale=1.0) {
+    let temp_colors = [];
+    for(let i = 0; i < colors.length; ++i) {
+        let c = colors[i];
+        for(let j = 0; j < 3; j++) c[j] /= 255; 
+        for(let j = 0; j < ((positions.length / 3) / sides); j++) {
+            temp_colors = temp_colors.concat(c)
+        }
+    }
+
+    let temp_positions = [];
+    for(let i = 0; i < positions.length; ++i) {
+        temp_positions[i] = positions[i] * scale;
+    }
+
+    return {
+        positions: temp_positions,
+        colors: temp_colors,
+        buffer: init_buffers(gl, temp_positions, temp_colors)
+    }
+}
 
 function init() {
     canvas = document.createElement("canvas");
@@ -96,19 +164,10 @@ function init() {
         }
     };
 
-    let temp_colors = [];
-    for(let i = 0; i < colors.length; ++i) {
-        const c = colors[i];
-        temp_colors = temp_colors.concat(c, c, c, c);
-    }
-
-    let scale = 1.5;
-    let temp_positions = [];
-    for(let i = 0; i < positions.length; ++i) {
-        temp_positions[i] = positions[i] * scale;
-    }
-
-    buffers = init_buffers(gl, temp_positions, temp_colors);
+    shapes = shapes.concat(
+        build_solid(gl, positions_triangle, sides_triangle, colors_triangle, 1.5),
+        build_solid(gl, positions_base,     sides_base,     colors_base,     1.5)
+    );
 
     requestAnimationFrame(render);
 }
@@ -122,6 +181,45 @@ function render(now) {
     draw(gl, delta_time);
 
     requestAnimationFrame(render);
+}
+
+function draw_solid(gl, solid) {
+    {
+        const num_components = 3;
+        const type = gl.FLOAT;
+        const normalize = false;
+        const stride = 0;
+        const offset = 0;
+
+        gl.bindBuffer(gl.ARRAY_BUFFER, solid.buffer.position);
+        gl.vertexAttribPointer(
+            program_info.attribLocations.vertexPosition,
+            num_components,
+            type,
+            normalize,
+            stride,
+            offset
+        );
+        gl.enableVertexAttribArray(program_info.attribLocations.vertexPosition);
+    }
+    {
+        const num_components = 4;
+        const type = gl.FLOAT;
+        const normalize = false;
+        const stride = 0;
+        const offset = 0;
+
+        gl.bindBuffer(gl.ARRAY_BUFFER, solid.buffer.color);
+        gl.vertexAttribPointer(
+            program_info.attribLocations.vertexColor,
+            num_components,
+            type,
+            normalize,
+            stride,
+            offset
+        );
+        gl.enableVertexAttribArray(program_info.attribLocations.vertexColor);
+    }
 }
 
 let rotation_amt = 0.0;
@@ -149,60 +247,27 @@ function draw(gl, delta_time) {
 
     mat4.translate(model_view_matrix, model_view_matrix, [-0.0, 0.0, -6.0]);
     mat4.rotate(model_view_matrix, model_view_matrix, rotation_amt, [0, 1, 0]);
-    {
-        const num_components = 3;
-        const type = gl.FLOAT;
-        const normalize = false;
-        const stride = 0;
-        const offset = 0;
 
-        gl.bindBuffer(gl.ARRAY_BUFFER, buffers.position);
-        gl.vertexAttribPointer(
-            program_info.attribLocations.vertexPosition,
-            num_components,
-            type,
-            normalize,
-            stride,
-            offset
+    for (let i = 0; i < shapes.length; i++) {
+        draw_solid(gl, shapes[i]);
+
+        gl.useProgram(program_info.program);
+
+        gl.uniformMatrix4fv(
+            program_info.uniformLocations.projectionMatrix,
+            false,
+            projection_matrix
         );
-        gl.enableVertexAttribArray(program_info.attribLocations.vertexPosition);
-    }
-
-    {
-        const num_components = 4;
-        const type = gl.FLOAT;
-        const normalize = false;
-        const stride = 0;
-        const offset = 0;
-
-        gl.bindBuffer(gl.ARRAY_BUFFER, buffers.color);
-        gl.vertexAttribPointer(
-            program_info.attribLocations.vertexColor,
-            num_components,
-            type,
-            normalize,
-            stride,
-            offset
+        gl.uniformMatrix4fv(
+            program_info.uniformLocations.modelViewMatrix,
+            false,
+            model_view_matrix
         );
-        gl.enableVertexAttribArray(program_info.attribLocations.vertexColor);
+
+        const offset = 0;
+        let total_vertexs = shapes[i].positions.length / 3;
+        gl.drawArrays(gl.TRIANGLE_STRIP, offset, total_vertexs);
     }
-
-    gl.useProgram(program_info.program);
-
-    gl.uniformMatrix4fv(
-        program_info.uniformLocations.projectionMatrix,
-        false,
-        projection_matrix
-    );
-    gl.uniformMatrix4fv(
-        program_info.uniformLocations.modelViewMatrix,
-        false,
-        model_view_matrix
-    );
-
-    const offset = 0;
-    const vertex_count = 24;
-    gl.drawArrays(gl.TRIANGLE_STRIP, offset, vertex_count);
 
     img.src = canvas.toDataURL();
     //document.getElementById("pfp-container").style.background = "url(" + canvas.toDataURL() + ") no-repeat center 100%";
