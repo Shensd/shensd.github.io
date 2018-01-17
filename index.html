@@ -38,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div class="jumbotron jumbotron-top angle-stripes">
+        <div class="jumbotron jumbotron-top angle-stripes" id="pfp-container">
             <div class="container">
                 <br/>
                 <img src="img/compress.jpg" class="img-rounded" style="height:10em; width:10em" id="pfp"></img>                
@@ -92,7 +92,7 @@
         </div>
         <div class="container-fluid container-light">
             <p class="text-center navbar-text">
-                Copyright &copy; 2017 Jack Hance
+                Copyright &copy; 2018 Jack Hance
             </p>
         </div>
         <!-- Bootstrap core JavaScript
@@ -103,10 +103,25 @@
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/script.js"></script>
 
-        <script src="./js/gl-matrix.js"></script>
-        <script src="./js/shapes.js"></script>
-        <script src="./js/shaders.js"></script>
-        <script src="./js/3d.js"></script>
+        <!-- 
+            This is probably in bad practice but there's 
+            no point in loading so much extra if it isn't even supported 
+        -->
+        <script>
+            // Only load 3D scripts if WebGL is supported
+            if ((document.createElement("canvas")).getContext("webgl")) {
+                function add_src(src) {
+                    let sc = document.createElement("script");
+                    sc.src = src;
+                    document.body.appendChild(sc);
+                }
+                add_src("./js/gl-matrix.js");
+                add_src("./js/shapes.js");
+                add_src("./js/shaders.js");
+                add_src("./js/3d.js");
+            }
+        </script>
+
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>

@@ -1,61 +1,56 @@
+$block-dark:       #1a1b1c;
+$block-light:      #edf1f4
+$stripe-primary:   #f9b6ff;
+$stripe-secondary: #edf1f4;
+
 body, html, * {
     margin: 0;
     padding: 0;
 }
 .navbar { margin-bottom: 0 !important; }
 .container-inverse {
-    background-color: #1a1b1c;
-    color: #e0e2e5;
+    background-color: $block-dark;
+    color: $block-light;
 }
 .container-light {
-    background-color: #edf1f4;
-    color: #1a1b1c;
+    background-color: $block-light;
+    color: $block-dark;
 }
 /* #f9b6ff */
 /* #54585b */
 .vert-stripes {
     background: repeating-linear-gradient(
         90deg,
-        #f9b6ff,
-        #f9b6ff 10px,
-        #edf1f4 10px,
-        #edf1f4 20px
+        $stripe-primary,
+        $stripe-primary 10px,
+        $stripe-secondary 10px,
+        $stripe-secondary 20px
         );
 }
-.vert-stripes .container { background-color: #edf1f4; }
+.vert-stripes .container { background-color: $stripe-secondary; }
 
 .angle-stripes {
     background: repeating-linear-gradient(
         45deg,
-        #f9b6ff,
-        #f9b6ff 10px,
-        #edf1f4 10px,
-        #edf1f4 20px
+        $stripe-primary,
+        $stripe-primary 10px,
+        $stripe-secondary 10px,
+        $stripe-secondary 20px
         );
 }
 
-/*
-.angle_stripes {
-    background: repeating-linear-gradient(
-        45deg,
-        #54585b,
-        #54585b 10px,
-        #edc1f4 10px,
-        #edc1f4 20px
-    );
-}
-*/
-.angle-stripes .container { background-color: #edf1f4; }
+.angle-stripes .container { background-color: $stripe-secondary; }
+
 .horizontal-stripes {
     background: repeating-linear-gradient(
         0deg,
-        #54585b,
-        #54585b 10px,
-        #edf1f4 10px,
-        #edf1f4 20px
+        $stripe-primary,
+        $stripe-primary 10px,
+        $stripe-secondary 10px,
+        $stripe-secondary 20px
         );
 }
-.horizontal-stripes .container { background-color: #edf1f4; }
+.horizontal-stripes .container { background-color: $stripe-secondary; }
 .jumbotron-top {
     margin-bottom: 0 !important;
     margin-top: 50px;
@@ -64,7 +59,7 @@ body, html, * {
 }
 .jumbotron-top .container {
     margin-top: 50px;
-    background-color: #edf1f4;
+    background-color: $block-light;
 }
 .container-pane {
     height: 300px;
@@ -92,7 +87,7 @@ body, html, * {
 .contact h1 {
     color: #080808;
 }
-.contact .container { background-color: #edf1f4; padding: 30px}
+.contact .container { background-color: $block-light; padding: 30px}
 
 @media(max-width: 545px) {
     .container-pane {

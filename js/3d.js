@@ -205,16 +205,19 @@ function draw(gl, delta_time) {
     gl.drawArrays(gl.TRIANGLE_STRIP, offset, vertex_count);
 
     img.src = canvas.toDataURL();
+    //document.getElementById("pfp-container").style.background = "url(" + canvas.toDataURL() + ") no-repeat center 100%";
 }
 
 window.onload = () => {
     init();
-}
+};
 
 document.getElementById("pfp").onmouseover = () => {
-    rotation_speed = 2.0;
-}
-
+    rotation_speed = rotation_speed < 0 ? -3.0 : 3.0;
+};
 document.getElementById("pfp").onmouseout = () => {
-    rotation_speed = 1.0;
-}
+    rotation_speed = rotation_speed < 0 ? -1.0 : 1.0;
+};
+document.getElementById("pfp").onmousedown = () => {
+    rotation_speed = rotation_speed * -1;
+};
