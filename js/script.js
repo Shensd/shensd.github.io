@@ -11,8 +11,7 @@ $(document).ready(function() {
     $(window).resize(size);
 
     $("#btn-top").click(function() {scrollTo("#top")});
-    $("#btn-languages").click(function() {scrollTo("#languages")});
-    $("#btn-about").click(function() {scrollTo("#about")});
+    $("#btn-projects").click(function() {scrollTo("#projects")});
     $("#btn-contact").click(function() {scrollTo("#contact")});
 });
 

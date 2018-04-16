@@ -270,7 +270,6 @@ function draw(gl, delta_time) {
     }
 
     img.src = canvas.toDataURL();
-    //document.getElementById("pfp-container").style.background = "url(" + canvas.toDataURL() + ") no-repeat center 100%";
 }
 
 window.onload = () => {

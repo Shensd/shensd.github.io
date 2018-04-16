@@ -12,34 +12,25 @@
         <link rel="icon" href="assets/icons/icon.ico" />
 
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
         <!-- Custom Styles -->
         <link rel="stylesheet" type="text/css" href="css/styles.min.css" />
     </head>
     <body id="top">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#" id="btn-top">Jack Hance</a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar-collapse-main">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <li id="btn-languages"><a href="#">Experience</a></li>
-                            <li id="btn-about"><a href="#">About</a></li>
-                            <li id="btn-contact"><a href="#">Contact</a></li>
-                        </li>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#" id="btn-top">Jack Hance</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbar-collapse-main" aria-expanded="true">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="btn-projects" href="#">Projects</a>
+                    <a class="nav-item nav-link" id="btn-contact" href="#">Contact</a>
                 </div>
             </div>
-        </div>
+        </nav>
+
         <div class="jumbotron jumbotron-top angle-stripes" id="pfp-container">
             <div class="container">
                 <br/>
@@ -54,6 +45,35 @@
                 </h5>
             </div>
         </div>
+
+        <div class="container-fluid" id="projects">
+            <h1>Projects</h1>
+            <p>Here's some of my favorite projects and their respective links.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./assets/images/kinect-card.gif" style="width:18rem;"></div> 
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Body</p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./assets/images/kinect-card.gif" style="width:18rem;"></div> 
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Body</p>
+                            <a href="#" class="btn btn-primary">Link</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <!--
         <div class="container container-full container-pane container-inverse container-mid" id="languages">
             <div class="container text-left">
                 <h1>What do I do?</h1>
@@ -84,6 +104,8 @@
                 </p>
             </div>
         </div>
+        
+-->
         <div class="container container-full container-pane container-inverse contact" id="contact">
             <div class="container">
                 <h1>Want to contact me?</h1>
