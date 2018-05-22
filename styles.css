@@ -1,0 +1,53 @@
+body, html, * {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    background-color: #edc3f5;
+    font-family: 'VT323', monospace;
+}
+
+p {
+    font-size: 1em;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.card {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+    background-color: white;
+}
+
+.pfp-container {
+    float: left;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+
+#pfp {
+    width: 12em;
+    float: left;
+}
+
+@media (max-width: 620px) {
+    .card {
+        flex-direction: column;
+    }
+    .pfp-container {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
