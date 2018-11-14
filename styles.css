@@ -5,7 +5,8 @@ body, html, * {
 
 body, html {
     height: 100%;
-	background-color: #edc3f5;
+    /* background-color: #edc3f5; */
+    background-color: #fff493;
     font-family: 'VT323', monospace;
 }
 
