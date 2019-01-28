@@ -7,7 +7,12 @@ body, html {
     height: 100%;
     /* background-color: #edc3f5; */
     background-color: #ff8282;
+    /*
+    
     font-family: 'VT323', monospace;
+
+    */
+    font-family: 'Oswald', sans-serif;
 }
 
 p {
@@ -22,8 +27,7 @@ p {
 }
 
 .card-border {
-    border-radius: 5px;
-    border: 1px solid black;
+    border-radius: 1px;
 }
 
 .card {
@@ -39,7 +43,7 @@ p {
     margin-right: 20px;
 }
 
-#pfp {
+.pfp {
     width: 12em;
     float: left;
 }
