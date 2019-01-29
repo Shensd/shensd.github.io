@@ -45,10 +45,22 @@ p {
     background-color: #ff87c5;
 }
 
-.projects-panel {
+.psbb-panel {
     background-color: #87f6ff;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.tohru-panel {
+    background-color: #ff87c5;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hackbot-panel {
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .footer {
@@ -71,10 +83,16 @@ p {
     .card {
         width: 50vw;
     }
+    .jumbotron-image {
+        width: 50vw;
+    }
 }
 
 @media(max-width: 1000px) {
     .card {
+        width: 75vw;
+    }
+    .jumbotron-image {
         width: 75vw;
     }
 }
@@ -83,43 +101,13 @@ p {
     .card {
         width: 90vw;
     }
+    .jumbotron-image {
+        width: 90vw;
+    }
 }
 
 .background-white {
     background-color: white;
-}
-
-
-.auction {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.auction-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.auction-card {
-    width: 200px;
-    box-shadow: 2px 2px 2px 2px black;
-    background-color: white;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.auction-card>h1 {
-    text-align: center;
-}
-
-.auction-pfp {
-    width: 128px;
-    border: 2px solid black;
-    margin: 0 auto;
 }
 
 ul {
