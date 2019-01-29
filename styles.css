@@ -5,51 +5,115 @@ body, html, * {
 
 body, html {
     height: 100%;
-    /* background-color: #edc3f5; */
-    background-color: #ff8282;
-    font-family: 'VT323', monospace;
+    background-color: #ff87c5;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-image: url("./res/softpostfuture-high.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 p {
     font-size: 1em;
 }
 
-.container {
-    height: 100%;
+.jumbotron {
+    height: 100vh;
     display: flex;
     align-items: center; 
     justify-content: center;
 }
 
-.card-border {
-    border-radius: 5px;
-    border: 1px solid black;
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.card {
-    padding: 10px;
-    display: flex;
-    align-items: center; 
-    flex-direction: row;
+.header-1 {
+    font-size: 54px;
+}
+
+.school-panel {
     background-color: white;
 }
 
-.pfp-container {
-    float: left;
-    margin-right: 20px;
+.experience-panel {
+    background-color: #ff87c5;
 }
 
-#pfp {
-    width: 12em;
-    float: left;
+.psbb-panel {
+    background-color: #87f6ff;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-@media (max-width: 620px) {
+.tohru-panel {
+    background-color: #ff87c5;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hackbot-panel {
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer {
+    background-color: #ffef87;
+    height: 4vh;
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+
+.card {
+    text-align: left;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px 3px black;
+    width: 50vw;
+    padding: 20px;
+}
+
+@media(min-width: 1000px) {
     .card {
-        flex-direction: column;
+        width: 50vw;
     }
-    .pfp-container {
-        margin-right: 0px;
-        margin-bottom: 20px;
+    .jumbotron-image {
+        width: 50vw;
     }
+}
+
+@media(max-width: 1000px) {
+    .card {
+        width: 75vw;
+    }
+    .jumbotron-image {
+        width: 75vw;
+    }
+}
+
+@media(max-width: 600px) {
+    .card {
+        width: 90vw;
+    }
+    .jumbotron-image {
+        width: 90vw;
+    }
+}
+
+.background-white {
+    background-color: white;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.indent {
+    padding-left: 2em;
 }
