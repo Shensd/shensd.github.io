@@ -72,8 +72,6 @@ const IndexPage = () => (
                 <li>Course taught using Java</li>
             </ul>
             <br/>
-            <hr/>
-            <br/>
             <p><strong>Club Officer</strong>, NDSU Cybersecurity Student Assocation</p>
             <p>
                 The NDSU Cybersecurity Student Association is a club dedicated to peer learning oriented towards cybersecurity. Club members participate in student lead lessons and compete in hacking competitions. The club also focuses on team programming and the technology along with it.
