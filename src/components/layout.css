@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body, html, * {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    background-color: #ff87c5;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-image: url("../images/softpostfuture.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+p {
+    font-size: 1em;
+}
+
+.jumbotron {
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-1 {
+    font-size: 54px;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+    width: 100%;
+}
+
+.info-section {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card {
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+    min-height: 100px;
+    width: 70vw;
+    background-color: white;
+    box-shadow: 3px 3px black;
+    border: 1px solid black;
+}
+
+/*
+@media(max-width: 1000px) {
+    .info-card {
+        width: 90vw;
+    }
+}
+
+@media(min-width: 1000px) {
+    .info-card {
+        min-width: 300px;
+        max-width: 500px;
+    }
+}
+*/
+
+footer {
+    background-color: #ffef87;
+    height: 4vh;
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+
+ul {
+    list-style-position: inside;
+}
+
