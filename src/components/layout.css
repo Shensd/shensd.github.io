@@ -101,3 +101,9 @@ ul {
     list-style-position: inside;
 }
 
+.bg-qr {
+    background-image: url("../images/qr.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}

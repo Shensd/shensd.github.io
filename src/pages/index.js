@@ -24,7 +24,7 @@ const IndexPage = () => (
         </a>
     </Jumbotron>
     <Slide backgroundColor={bgPrimary}>
-        <InfoCard backgroundColor={bgPrimary}>
+        <InfoCard backgroundColor={bgPrimary} className="bg-qr">
             <h1>About Me</h1>
             <p>
                 Hi, I'm Jack, I'm a software developer. 
@@ -33,9 +33,8 @@ const IndexPage = () => (
                 North Dakota State University majoring in Computer Science. I have a background
                 in front-end development, back-end development, web server administration, and penitration testing.
             </p>
-            <br/>
-            <hr/>
-            <br/>
+        </InfoCard>
+        <InfoCard backgroundColor={bgSecondary}>
             <h1>Experience</h1>
             <p><strong>C++</strong>, 2 years experience (2017 - present)</p>
             <p><strong>HTML5/CSS3/Javascript</strong>, 4 years experience (2015 - present)</p>
@@ -43,16 +42,15 @@ const IndexPage = () => (
             <p><strong>Java</strong>, 3 years experience (2016 - present)</p>
             <p><strong>Apache2/Linux Remote Management</strong>, 3 years experience (2016 - present)</p>
             <p><strong>Penetration Testing</strong>, 1 Year of Experience (2019)</p>
-            <br/>
-            <hr/>
-            <br/>
+        </InfoCard>
+        <InfoCard backgroundColor={bgPrimary}>
             <h1>What I've Made</h1>
             <h3><a href="https://github.com/Shensd/psbb" target="_blank" rel="noopener noreferrer">PSBB</a> - A Webserver for the Modern Era</h3>
             <p>
                 PSBB is an HTTP server built from scratch in C++, 
                 it has support for serving many file types with blazing fast speed.
             </p>
-            <br/>
+            <br />
             <h3><a href="https://github.com/Shensd/TohruBot" target="_blank" rel="noopener noreferrer">Tohru Bot</a>  - The Only&trade; Discord Bot</h3>
             <p>
                 Tohru Bot is a chat bot for <a href="https://discordapp.com/" target="_blank" rel="noopener noreferrer">Discord,</a> a
@@ -60,9 +58,8 @@ const IndexPage = () => (
                 <br/>
                 Tohru Bot has it's own website, which can be seen at <a href="https://tohru.fun" rel="noopener noreferrer">tohru.fun</a>
             </p>
-            <br/>
-            <hr/>
-            <br/>
+        </InfoCard>
+        <InfoCard backgroundColor={bgSecondary}>
             <h1>School</h1>
             <p>
                 <strong>BS Computer Science</strong>, North Dakota State University, Fargo, ND, Expected May 2021
