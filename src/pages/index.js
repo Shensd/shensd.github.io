@@ -34,7 +34,7 @@ const IndexPage = () => (
                 in front-end development, back-end development, web server administration, and penitration testing.
             </p>
         </InfoCard>
-        <InfoCard backgroundColor={bgSecondary}>
+        <InfoCard backgroundColor={bgSecondary} className="bg-vapormonogatari">
             <h1>Experience</h1>
             <p><strong>C++</strong>, 2 years experience (2017 - present)</p>
             <p><strong>HTML5/CSS3/Javascript</strong>, 4 years experience (2015 - present)</p>
@@ -43,7 +43,7 @@ const IndexPage = () => (
             <p><strong>Apache2/Linux Remote Management</strong>, 3 years experience (2016 - present)</p>
             <p><strong>Penetration Testing</strong>, 1 Year of Experience (2019)</p>
         </InfoCard>
-        <InfoCard backgroundColor={bgPrimary}>
+        <InfoCard backgroundColor={bgPrimary} className="bg-tohrufun">
             <h1>What I've Made</h1>
             <h3><a href="https://github.com/Shensd/psbb" target="_blank" rel="noopener noreferrer">PSBB</a> - A Webserver for the Modern Era</h3>
             <p>
@@ -59,7 +59,7 @@ const IndexPage = () => (
                 Tohru Bot has it's own website, which can be seen at <a href="https://tohru.fun" rel="noopener noreferrer">tohru.fun</a>
             </p>
         </InfoCard>
-        <InfoCard backgroundColor={bgSecondary}>
+        <InfoCard backgroundColor={bgSecondary} className="bg-landscapeblue">
             <h1>School</h1>
             <p>
                 <strong>BS Computer Science</strong>, North Dakota State University, Fargo, ND, Expected May 2021
