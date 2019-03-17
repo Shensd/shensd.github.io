@@ -104,7 +104,7 @@ ul {
 
 @keyframes angleSlide {
 	from { background-position: 0 0; }
-	to { background-position: 100% 100%; }
+	to { background-position: 100px 100px; }
 }
 
 .bg-qr {
@@ -113,7 +113,7 @@ ul {
     background-size: 100px 100px;
     background-position: center center;
 
-    animation: angleSlide 40s linear infinite;
+    animation: angleSlide 5s linear infinite;
 }
 
 .bg-vapormonogatari {
