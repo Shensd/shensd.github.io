@@ -90,7 +90,8 @@ p {
 */
 
 footer {
-    background-color: #ffef87;
+    /*background-color: #ffef87;*/
+    background-color: #ffffff;
     height: 4vh;
     width: 100%;
     text-align: center;
@@ -101,3 +102,44 @@ ul {
     list-style-position: inside;
 }
 
+@keyframes angleSlide {
+	from { background-position: 0 0; }
+	to { background-position: 100% 100%; }
+}
+
+.bg-qr {
+    background-image: url("../images/qr.png");
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    background-position: center center;
+
+    animation: angleSlide 40s linear infinite;
+}
+
+.bg-vapormonogatari {
+    background-image: url("../images/vapormonogatari.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-chaos {
+    background-image: url("../images/chaos.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-tohrufun {
+    background-image: url("../images/tohrufun.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-landscapeblue {
+    background-image: url("../images/landscape-blue.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
