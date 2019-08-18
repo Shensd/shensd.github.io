@@ -1,0 +1,34 @@
+.position-carousel > h2 {
+    display: inline;
+}
+
+.transition-out, .transition-in {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+.transition-out {
+    animation-name: fadeout;
+}
+.transition-in {
+    animation-name: fadein;
+}
+
+@keyframes fadeout {
+    from {
+        color: black;
+    }
+    to {
+        color: white;
+    }
+}
+
+@keyframes fadein {
+    from {
+        color: white;
+    }
+    to {
+        color: black;
+    }
+}
