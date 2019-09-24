@@ -11,19 +11,19 @@ body {
     font-family: 'Roboto Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    background-image: url("res/no-digging-white-34.png");
     background-position: center top;
     background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1000px) {
     body {
+        background-image: url("res/no-digging-white-mobile.png");
         background-size: auto 150vh;
     }
 }
 @media only screen and (min-width: 1000px) {
     body {
+        background-image: url("res/no-digging-white-desktop.png");
         background-size: cover 150vh;
     }
 }

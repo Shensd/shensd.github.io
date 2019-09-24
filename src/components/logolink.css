@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1000px) {
+    .logo-link-img {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo-link-img {
+        width: 50px;
+    }
+}
