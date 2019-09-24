@@ -20,13 +20,13 @@
         color: black;
     }
     to {
-        color: white;
+        color: rgba(0, 0, 0, 0);
     }
 }
 
 @keyframes fadein {
     from {
-        color: white;
+        color: rgba(0, 0, 0, 0);
     }
     to {
         color: black;

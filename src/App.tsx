@@ -13,7 +13,6 @@ const App: React.FC = () => {
             <Jumbotron>
                 <h1>Jack Hance</h1>
                 <PositionCarousel preface="" titles={["Software Developer", "Hacker", "Student", "Circuit Bender", "Researcher"]}/>
-                <LogoLink logo="res/spiral-mini.png" link="google.com"></LogoLink>
             </Jumbotron>
 
             <div className="cards">
