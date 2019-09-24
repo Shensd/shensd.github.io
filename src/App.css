@@ -1,32 +1,5 @@
-.App {
-    margin: 5%;
-}
-
-.nameplate {
-    text-align: left;
-    line-height: 10px;
-}
-.nameplate > h1 {
-    font-size: 5em;
-}
-.position-carousel > h2 {
-    font-size: 2.5em;
-}
-.list-item > h3 {
-    font-size: 1.5em;
-}
-.info-card > h2 {
-    font-size: 2em;
-}
-.info-card {
-    border: 1px solid black;
-}
-
-.cluster {
+.cards {
     display: flex;
-    flex-direction: row;
-}
-
-.cluster-panel {
-    width: 50%;
+    align-items: center;
+    flex-direction: column;
 }

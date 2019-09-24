@@ -1,0 +1,28 @@
+.jumbotron {
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../res/this-isnt-a-hole-you-can-dig-out-of-white-100.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2px solid black;
+}
+.jumbotron > .content {
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+    .jumbotron > .content {
+        width: 30vw;
+    }
+}
+.jumbotron > .content > h1 {
+    font-size: 2.5em;
+}
+.jumbotron > .content > * > h2 {
+    font-size: 2em;
+}

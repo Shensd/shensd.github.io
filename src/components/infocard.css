@@ -1,0 +1,32 @@
+.info-card {
+    margin: 5%;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: white;
+    width: 80vw;
+}
+
+@media only screen and (min-width: 1000px) {
+    .info-card {
+        height: 40vh;
+    }
+    .info-card-left {
+        box-shadow: 5px 5px;
+        margin-left: 7%;
+    }
+    .info-card-right {
+        box-shadow: -5px 5px;
+        margin-right: 7%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .info-card-left, .info-card-right {
+        box-shadow: none;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.info-card > h2 {
+    font-size: 2em;
+}

@@ -1,11 +1,19 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: local('Roboto Mono'), url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap') format('woff');
+}
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif;*/
+    font-family: 'Roboto Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: white;
+    background-image: url("res/spiral-backdrop.gif");
+    background-size: 50vw;
 }
 
 code {
