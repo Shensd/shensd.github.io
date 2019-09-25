@@ -8,20 +8,21 @@ body {
     font-family: 'Roboto Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-position: center top;
     background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 600px) {
     body {
         background-image: url("res/jumbos/no-digging-white-mobile.png");
-        background-size: auto 150vh;
+        background-size: 100vw cover;
+        background-position: center -500px;
     }
 }
 @media only screen and (min-width: 600px) {
     body {
         background-image: url("res/jumbos/no-digging-white-desktop.png");
         background-size: cover 150vh;
+        background-position: center top;
     }
 }
 

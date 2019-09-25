@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <div className="App">
             <Jumbotron>
                 <h1>Jack Hance</h1>
-                <PositionCarousel preface="" titles={["Software Developer", "Hacker", "Student", "Circuit Bender", "Researcher"]}/>
+                <PositionCarousel preface="" titles={["Developer", "Hacker", "Student", "Circuit Bender", "Researcher"]}/>
                 <div className="logo-bar">
                     <LogoLink logo={LogoGithub} link="https://github.com/Shensd"></LogoLink>
                     <LogoLink logo={LogoMail} link="mailto:jack@hance.xyz"></LogoLink>
