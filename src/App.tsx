@@ -11,6 +11,8 @@ import NameplateCPP from './res/nameplates/cpp-nameplate.png';
 
 import Logo from "./res/spiral-mini.png";
 
+import TitlebarEducation from './res/titlebars/education-titlebar.png';
+
 const App: React.FC = () => {
     return (
         <div className="App">
@@ -19,6 +21,8 @@ const App: React.FC = () => {
                 <PositionCarousel preface="" titles={["Software Developer", "Hacker", "Student", "Circuit Bender", "Researcher"]}/>
                 <LogoLink logo={Logo} link="http://google.com"></LogoLink>
             </Jumbotron>
+
+            <img src={TitlebarEducation} alt="Education" className="titlebar"/>
 
             <div className="cards">
                 <InfoCard title="Education">
