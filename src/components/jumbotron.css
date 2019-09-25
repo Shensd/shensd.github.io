@@ -4,6 +4,7 @@
     align-items: center;
 }
 .jumbotron > .content {
+    width: 100vw;
     padding: 20px;
     text-align: center;
 }
@@ -11,16 +12,10 @@
     .jumbotron {
         justify-content: flex-start;
     }
-    .jumbotron > .content {
-        width: 30vw;
-    }
 }
 @media only screen and (max-width: 1000px) {
     .jumbotron {
         justify-content: center;
-    }
-    .jumbotron > .content {
-        width: 100vw;
     }
 }
 .jumbotron > .content > h1 {
