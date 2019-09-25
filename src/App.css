@@ -1,0 +1,75 @@
+.cards {
+    margin-top: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 1000px) {
+    .langs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: row wrap;
+        justify-content: space-around;
+    }
+    .lang-nameplate {
+        width: 30vw;
+    }
+    .lang-box {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .langs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lang-nameplate {
+        width: 80vw;
+    }
+    .lang-box {
+        width: 100%;
+    }
+}
+
+.logo-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlebar {
+    width: 100vw;
+}
+
+.footer-spiral {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .img-spiral {
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+    .img-spiral {
+        width: 20vw;
+    }   
+}
+@media only screen and (max-width: 500px) {
+    .img-spiral {
+        width: 100px;
+    }   
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+}
