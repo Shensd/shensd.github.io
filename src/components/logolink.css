@@ -1,3 +1,7 @@
+.logo-link {
+    margin: 10px;
+}
+
 @media only screen and (min-width: 1000px) {
     .logo-link-img {
         width: 60px;

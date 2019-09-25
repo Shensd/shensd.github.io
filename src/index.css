@@ -12,15 +12,15 @@ body {
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     body {
-        background-image: url("res/no-digging-white-mobile.png");
+        background-image: url("res/jumbos/no-digging-white-mobile.png");
         background-size: auto 150vh;
     }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 600px) {
     body {
-        background-image: url("res/no-digging-white-desktop.png");
+        background-image: url("res/jumbos/no-digging-white-desktop.png");
         background-size: cover 150vh;
     }
 }

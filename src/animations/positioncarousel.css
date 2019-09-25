@@ -1,7 +1,3 @@
-.position-carousel > h2 {
-    display: inline;
-}
-
 .transition-out, .transition-in {
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
