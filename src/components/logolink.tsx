@@ -5,7 +5,7 @@ import "./logolink.css";
 const LogoLink = ({logo, link} : {logo: string, link: string}) => {
     return (
         <div className="logo-link">
-            <a href={link}>
+            <a  rel="noopener noreferrer" target="_blank" href={link}>
                 <img src={logo} className="logo-link-img" alt={link} />
             </a>
         </div>
