@@ -80,7 +80,7 @@ const App: React.FC = () => {
                                 I have used front end web development technologies frequently throughout my career as a 
                                 developer, and I find myself very comfortable using them across a variety of applications.
                                 My strength within this area is bringing design ideas to life in the form of websites. 
-                                Some websites I have created in the past include <a href="https://tohru.fun" rel="noopener noreferrer" target="_blank">thoru.fun</a> and <a href="https://insomniactf.com" rel="noopener noreferrer" target="_blank">insomniactf.com</a>.
+                                Some websites I have created in the past include <a href="https://tohru.fun" rel="noopener noreferrer" target="_blank">tohru.fun</a> and <a href="https://insomniactf.com" rel="noopener noreferrer" target="_blank">insomniactf.com</a>.
                             </p>
                             <ul>
                                 <li>Interfaces</li>
