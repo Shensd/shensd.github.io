@@ -26,17 +26,33 @@ const App: React.FC = () => {
             <div className="cards">
                 <InfoCard>
                     <h2>Education</h2>
-                    <p><b>BS Computer Science</b> - North Dakota State University, Expected May 2021</p>
-                    <p>
-                        I am currently attending my sophomore year at North Dakota State University, the computer science 
-                        course is heavily focused on Java, but also includes the use of languages such as C# and C.
-                    </p>
+                        <p><b>BS Computer Science,</b> North Dakota State University, Expected Fall 2021</p>
+                        <p>
+                            I am currently attending my junior year at North Dakota State University, the computer science 
+                            course is heavily focused on Java, but also includes the use of languages such as C# and C.
+                        </p>
+                        <ul>
+                            <li>Recognized as a student of distinction within the NDSU Department of Computer Science</li>
+                            <li>Placed on the Dean’s List each of the four semesters completed</li>
+                        </ul>
+                    <h2>Experience</h2>
+                        <p><b>JES2 Development Intern,</b> IBM, June 2020 to Present</p>
+                        <p>
+                            JES2 is a component of z/OS, an enterprise mainframe operating system developed by IBM. JES2's 
+                            functionality within z/OS is to act as a core manager for batch jobs executed on the system, 
+                            and as such, working with JES2 requires an all-encompassing understanding of the mainframe ecosystem.  
+                            This internship allowed me to work with mainframes and many of their associated technologies, 
+                            such as z/OS, z/VM, and ISPF. It also allowed me to work with several IBM languages, those being 
+                            HLASM, JCL, and others internal to IBM. I had no experience with the style of computing that 
+                            mainframes require before this internship, so it has been a wonderful opportunity to be given 
+                            a solid familiarity with the system.
+                        </p>
                     <ul>
-                        <li>Recognized as a student of distinction within the NDSU Department of Computer Science</li>
-                        <li>Placed on the dean’s list for fall and spring semesters of freshman year</li>
+                        <li>Gained experience and familiarity with the mainframe ecosystem</li>
+                        <li>Worked with many different technologies including HLASM, Z/VM, Z/OS, and ISPF</li>
                     </ul>
                     <h2>Extracurricular</h2>
-                        <p><b>Vice President</b> - NDSU Cybersecurity Student Association</p>
+                        <p><b>President,</b> NDSU Cybersecurity Student Association, May 2020 to Present</p>
                         <p>
                             The NDSU Cybersecurity Student Association is a club dedicated to peer learning oriented towards cybersecurity. 
                             Club members participate in student lead lessons and compete in hacking competitions. The club also focuses on 
@@ -48,7 +64,7 @@ const App: React.FC = () => {
                             <li>Worked in a team environment on several software development projects</li>
                         </ul>
                     <h2>Research</h2>
-                        <p><b>NDSU Cybersecurity Research Experience for Undergraduates</b></p>
+                        <p><b>Cybersecurity Research Experience for Undergraduates, </b> North Dakota State University, June 2019 - August 2019</p>
                         <p>
                             The Research Experience for Undergraduates is a program sponsored by the National Science Foundation to encourage
                             research to be conducted by undergraduate students in a growing number of different fields. I participated in the
@@ -57,22 +73,22 @@ const App: React.FC = () => {
                             history.
                         </p>
                     <h2>Achievements</h2>
-                        <p><b>Cyber Skyline’s NCL Regular Season 2019 CTF Competition</b>, placed in the top 1% of 4000+ players</p>
+                        <p><b>Cyber Skyline’s NCL Regular Season Spring 2020 CTF Competition,</b> placed 16th of 5300+ players</p>
                         <p>
                             A Capture the Flag competition is a competition in where players are given a wide array of hacking challenges with the 
                             goal of having players use many different cybersecurity skills to solve problems to get an end "flag." An example of a 
                             basic challenge would be to use an SQLI vulnerability to leak a database that holds a specific string that is the final 
                             flag. Cyber Skyline's NCL CTF competition consisted of categories including cryptography, reverse engineering, log analysis, 
                             password cracking, web application exploitation, and several others. In the individual section of the competition, 
-                            I placed 37th out of 4,149 players nationwide.
+                            I placed 16th out of 5,357 players nationwide.
                         </p>
-                        <p><b>2019 National Cyber Summit Cyber Cup Challenge</b>, placed 2nd out of 10+ college teams</p>
+                        <p><b>2019 National Cyber Summit Cyber Cup Challenge,</b> placed 2nd out of 10+ college teams</p>
                         <p>
                             The National Cyber Summit Cyber Cup Challenge is a team-based CTF taking place live during the Annual National Cyber Summit conference. 
                             I was the team captain of a team consisting of 4 members. We worked as a team to solve cybersecurity problems in several different 
                             categories, with a strong focus on web application exploitation.
                         </p>
-                    <h2>Experience</h2>
+                    <h2>Technologies</h2>
                     <div className="langs">
                         <div className="lang-box">
                             <h3>C++</h3>
