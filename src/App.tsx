@@ -29,7 +29,7 @@ const App: React.FC = () => {
                         <p><b>BS Computer Science,</b> North Dakota State University, Expected Fall 2021</p>
                         <p>
                             I am currently attending my junior year at North Dakota State University, the computer science 
-                            course is heavily focused on Java, but also includes the use of languages such as C# and C.
+                            course is heavily focused on Java, but also includes the use of languages such as C#, C, Typescript, and Python.
                         </p>
                         <ul>
                             <li>Recognized as a student of distinction within the NDSU Department of Computer Science</li>
@@ -70,10 +70,10 @@ const App: React.FC = () => {
                             research to be conducted by undergraduate students in a growing number of different fields. I participated in the
                             NDSU hosted Cybersecurity REU and developed, conducted, and wrote about the use of machine learning in post attack 
                             forensic analysis. My project was specifically about the use of unsupervised learning on profiling users by Bash 
-                            history.
+                            history. 
                         </p>
                     <h2>Achievements</h2>
-                        <p><b>Cyber Skyline’s NCL Regular Season Spring 2020 CTF Competition,</b> placed 16th of 5300+ players</p>
+                        <p><b>Cyber Skyline’s NCL Regular Season Fall 2020 CTF Competition,</b> placed 13th of 6000+ players</p>
                         <p>
                             A Capture the Flag competition is a competition in where players are given a wide array of hacking challenges with the 
                             goal of having players use many different cybersecurity skills to solve problems to get an end "flag." An example of a 
@@ -87,6 +87,30 @@ const App: React.FC = () => {
                             The National Cyber Summit Cyber Cup Challenge is a team-based CTF taking place live during the Annual National Cyber Summit conference. 
                             I was the team captain of a team consisting of 4 members. We worked as a team to solve cybersecurity problems in several different 
                             categories, with a strong focus on web application exploitation.
+                        </p>
+                        <p><b>Digi-Key Collegiate Computing Competition 2020,</b> placed 3rd out of 18 college teams</p>
+                        <p>
+                            Digi-Key's Collegiate Computing Competition (DKC^3) is a programming competition that consists of three main events: short programming 
+                            problems, long programming problems, and word problems. Each segment of the competition is time-constrained and as such teams must 
+                            strategize which problems to pour resources into and which ones to ignore. The 2020 competition was my first time participating and our 
+                            team placed 3rd out of the 18 college teams that were in attendance. 
+                        </p>
+                    <h2>Other Competitions</h2>
+                        <p><b>National Collegiate Cyber Defense Competition,</b> particiated 2018 and 2019</p>
+                        <p>
+                            The National Collegiate Cyber Defense Competition (CCDC) is a college level cyber defense competition in which teams are given a mock business 
+                            infrastructure purposely built with a large number of security vulnerabilities. These vulnerabilities must be found and fixed while a team 
+                            of penetration testers attempts to breach the network and leak information. Technologies change every year, but Active Directory and Linux 
+                            servers appear frequently. I have participated in this competition as both a team member (2018) and a team captain (2019). 
+                        </p>
+                        <p><b>National Collegiate Penetration Testing Competition, </b> participated 2019 and 2020</p>
+                        <p>
+                            The National Collegiate Penetration Testing Competition (CPTC) is a college-level cyber offense competition in which teams are presented a 
+                            mock business infrastructure that they must perform a penetration test on and then create a report of findings. The competition enforces 
+                            real-world penetration testing considerations, such as losing points for knocking services offline and receiving emails from a point of 
+                            contact asking for test updates. The report filed at the end is entirely crafted by teams, without being given any sort of direction or 
+                            template, requiring research into how penetration test reports are written in real-world penetration tests. I have participated as a team 
+                            captain two years in a row, leading two different teams of 6 individuals each.
                         </p>
                     <h2>Technologies</h2>
                     <div className="langs">
@@ -188,6 +212,49 @@ const App: React.FC = () => {
                             </ul>
                         </div>
                     </div>
+                    <h2>Operating Systems</h2>
+                    <div className="langs">
+                        <div className="lang-box">
+                            <h3>Linux</h3>
+                            <p>4 years experience (2016)</p>
+                            <p>
+                                I run Ubuntu Linux as my daily driver operating system, and have extensive experience using Linux in both development and in 
+                                general daily tasks. Most of my experience with Linux is within the Debian family of distros, but I am confident in my
+                                ability to learn the ecosystem of new Linux distros rather quickly. 
+                            </p>
+                            <ul>
+                                <li>Heavy experience with Bash/Shell</li>
+                                <li>Ubuntu Linux</li>
+                                <li>Server and Desktop Experience</li>
+                            </ul>
+                        </div>
+                        <div className="lang-box">
+                            <h3>Windows</h3>
+                            <p>9 years experience (2011)</p>
+                            <p>
+                                Being as Microsoft Windows is the most popular operating system on the market, I have used it for much of my computing career. 
+                                I have experience with using Windows both as a daily driver and a development ecosystem, as I have a decent amount of experience
+                                using tools such as Powershell and Visual Studio. 
+                            </p>
+                            <ul>
+                                <li>Experience with Powershell</li>
+                                <li>Windows 7/10</li>
+                                <li>Visual Studio</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2>Other Technologies</h2>
+                    <h3>Virtualization</h3>
+                    <p>
+                        I have utilized virtualization extensively for use in both development and cybersecurity, as virtual machines are incredibly beneficial
+                        for running things such as Kali Linux for penetration testing or Flare VM for reverse engineering purposes. I have experience with 
+                        setting up and using desktop clients and bare metal server hypervisors.
+                    </p>
+                    <ul>
+                        <li>Oracle VM VirtualBox</li>
+                        <li>VMware Workstation Player</li>
+                        <li>Proxmox and VMware ESXi</li>
+                    </ul>
                 </InfoCard>
             </div>
             <div className="footer-spiral">

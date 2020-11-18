@@ -90,3 +90,7 @@
         font-size: 1.5em;
     } 
 }
+
+b {
+    font-weight: bolder;
+}
