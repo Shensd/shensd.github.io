@@ -70,7 +70,9 @@ const App: React.FC = () => {
                             research to be conducted by undergraduate students in a growing number of different fields. I participated in the
                             NDSU hosted Cybersecurity REU and developed, conducted, and wrote about the use of machine learning in post attack 
                             forensic analysis. My project was specifically about the use of unsupervised learning on profiling users by Bash 
-                            history. 
+                            history. My paper <em>Use of Bash History Novelty Detection for Identification of Similar Source Attack Generation </em> 
+                            is set to be published at the 19th IEEE International Conference on Trust, Security and Privacy in Computing and Communications
+                            (IEEE TrustCom 2020) at the end of this December. 
                         </p>
                     <h2>Achievements</h2>
                         <p><b>Cyber Skyline’s NCL Regular Season Fall 2020 CTF Competition,</b> placed 13th of 6000+ players</p>
@@ -96,12 +98,12 @@ const App: React.FC = () => {
                             team placed 3rd out of the 18 college teams that were in attendance. 
                         </p>
                     <h2>Other Competitions</h2>
-                        <p><b>National Collegiate Cyber Defense Competition,</b> particiated 2018 and 2019</p>
+                        <p><b>National Collegiate Cyber Defense Competition,</b> particiated 2019 and 2020</p>
                         <p>
                             The National Collegiate Cyber Defense Competition (CCDC) is a college level cyber defense competition in which teams are given a mock business 
                             infrastructure purposely built with a large number of security vulnerabilities. These vulnerabilities must be found and fixed while a team 
                             of penetration testers attempts to breach the network and leak information. Technologies change every year, but Active Directory and Linux 
-                            servers appear frequently. I have participated in this competition as both a team member (2018) and a team captain (2019). 
+                            servers appear frequently. I have participated in this competition as both a team member (2019) and a team captain (2020). 
                         </p>
                         <p><b>National Collegiate Penetration Testing Competition, </b> participated 2019 and 2020</p>
                         <p>
