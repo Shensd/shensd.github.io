@@ -82,7 +82,7 @@ const App: React.FC = () => {
                             basic challenge would be to use an SQLI vulnerability to leak a database that holds a specific string that is the final 
                             flag. Cyber Skyline's NCL CTF competition consisted of categories including cryptography, reverse engineering, log analysis, 
                             password cracking, web application exploitation, and several others. In the individual section of the competition, 
-                            I placed 16th out of 5,357 players nationwide.
+                            I placed 13th out of 6,011 players nationwide.
                         </p>
                         <p><b>2019 National Cyber Summit Cyber Cup Challenge,</b> placed 2nd out of 10+ college teams</p>
                         <p>
