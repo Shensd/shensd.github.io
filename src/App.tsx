@@ -12,6 +12,8 @@ import LogoMail from "./res/logos/logo-mail.png";
 
 import AniSpiral from './res/animations/spiral-single.gif';
 
+import Since from "./components/since";
+
 const App: React.FC = () => {
     return (
         <div className="App">
@@ -36,7 +38,7 @@ const App: React.FC = () => {
                             <li>Placed on the Dean’s List each of the four semesters completed</li>
                         </ul>
                     <h2>Experience</h2>
-                        <p><b>JES2 Development Intern,</b> IBM, June 2020 to Present</p>
+                        <p><b>JES2 Development Intern,</b> IBM, June 2020 to December 2020</p>
                         <p>
                             JES2 is a component of z/OS, an enterprise mainframe operating system developed by IBM. JES2's 
                             functionality within z/OS is to act as a core manager for batch jobs executed on the system, 
@@ -71,8 +73,8 @@ const App: React.FC = () => {
                             NDSU hosted Cybersecurity REU and developed, conducted, and wrote about the use of machine learning in post attack 
                             forensic analysis. My project was specifically about the use of unsupervised learning on profiling users by Bash 
                             history. My paper <em>Use of Bash History Novelty Detection for Identification of Similar Source Attack Generation </em> 
-                            is set to be published at the 19th IEEE International Conference on Trust, Security and Privacy in Computing and Communications
-                            (IEEE TrustCom 2020) at the end of this December. 
+                            was published at the 19th IEEE International Conference on Trust, Security and Privacy in Computing and Communications
+                            (IEEE TrustCom 2020) at the end of December 2020. 
                         </p>
                     <h2>Achievements</h2>
                         <p><b>Cyber Skyline’s NCL Regular Season Fall 2020 CTF Competition,</b> placed 13th of 6000+ players</p>
@@ -118,7 +120,7 @@ const App: React.FC = () => {
                     <div className="langs">
                         <div className="lang-box">
                             <h3>C++</h3>
-                            <p>3 years experience (2017)</p>
+                            <Since>2017</Since>
                             <p>
                                 My primary development language is C++, I tend to use it largely with networking and hardware
                                 but have also used it with libraries such as OpenGL. Some specific projects created with C++
@@ -133,7 +135,7 @@ const App: React.FC = () => {
                         </div>
                         <div className="lang-box">
                             <h3>Javascript/Typescript/Node.js</h3>
-                            <p>4 years experience (2016)</p>
+                            <Since>2016</Since>
                             <p>
                                 I have used Node.js and companion languages in many different applications, but the area of which
                                 I have done the most development is the creation of chat bots for social applications such as <a rel="noopener noreferrer" target="_blank" href="https://discord.gg">Discord</a>, which is a voice and chat application platform with rich
@@ -150,7 +152,7 @@ const App: React.FC = () => {
                     <div className="langs">
                         <div className="lang-box">
                             <h3>Python</h3>
-                            <p>3 years experience (2017)</p>
+                            <Since>2017</Since>
                             <p>
                                 I have used python extensively in networking, web scraping, and general-purpose scripting. 
                                 I also use it for automation of scripts for applications in daily use and penetration testing, 
@@ -167,7 +169,7 @@ const App: React.FC = () => {
                         </div>
                         <div className="lang-box">
                             <h3>Penetration Testing</h3>
-                            <p>2 years experience (2018)</p>
+                            <Since>2018</Since>
                             <p>
                             I have participated in a large number of cybersecurity competitions, both in a team and individual 
                             settings. These have included more game-like hacking such as capture the flag competitions, but 
@@ -186,7 +188,7 @@ const App: React.FC = () => {
                     <div className="langs">
                         <div className="lang-box">
                             <h3>HTML5/CSS3/Javascript</h3>
-                            <p>5 years experience (2015)</p>
+                            <Since>2015</Since>
                             <p>
                                 I have used front end web development technologies frequently throughout my career as a 
                                 developer, and I find myself very comfortable using them across a variety of applications.
@@ -201,7 +203,7 @@ const App: React.FC = () => {
                         </div>
                         <div className="lang-box">
                             <h3>Apache2/Linux Remote Management</h3>
-                            <p>4 years experience (2016)</p>
+                            <Since>2016</Since>
                             <p>
                                 I have hosted and managed several low traffic websites for multiple years, all of which being
                                 hosted on Linux machines with Apache2 as a backend. An example of this can be seen 
@@ -218,7 +220,7 @@ const App: React.FC = () => {
                     <div className="langs">
                         <div className="lang-box">
                             <h3>Linux</h3>
-                            <p>4 years experience (2016)</p>
+                            <Since>2016</Since>
                             <p>
                                 I run Ubuntu Linux as my daily driver operating system, and have extensive experience using Linux in both development and in 
                                 general daily tasks. Most of my experience with Linux is within the Debian family of distros, but I am confident in my
@@ -232,7 +234,7 @@ const App: React.FC = () => {
                         </div>
                         <div className="lang-box">
                             <h3>Windows</h3>
-                            <p>9 years experience (2011)</p>
+                            <Since>2011</Since>
                             <p>
                                 Being as Microsoft Windows is the most popular operating system on the market, I have used it for much of my computing career. 
                                 I have experience with using Windows both as a daily driver and a development ecosystem, as I have a decent amount of experience
@@ -262,7 +264,7 @@ const App: React.FC = () => {
             <div className="footer-spiral">
                 <img src={AniSpiral} alt="Spiral Animation Footer" className="img-spiral"/>
             </div>
-            <div className="footer"><p>Jack Hance 2020</p></div>
+            <div className="footer"><p>Jack Hance {new Date().getFullYear()}</p></div>
         </div>
     );
 }
