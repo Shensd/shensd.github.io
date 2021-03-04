@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+body {
+    margin: 0;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;*/
+    font-family: 'Roboto Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("../res/jumbos/no-digging-white-mobile-min.png");
+        background-size: 100vw cover;
+        background-position: center -500px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url("../res/jumbos/no-digging-white-desktop-min.png");
+        background-size: 100vw;
+        background-position: center top;
+    }
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 .cards {
     display: flex;
     align-items: center;
