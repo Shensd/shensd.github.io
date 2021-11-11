@@ -6,7 +6,7 @@ description: >-
   and the occasional CTF.
 tagline: This is a collection of things I have done and am capable of doing.
 baseurl: "/" 
-url: "http://test.thighsocks.net"
+url: "https://jackhance.com"
 github_username: shensd
 author: shensd
 defaults:
