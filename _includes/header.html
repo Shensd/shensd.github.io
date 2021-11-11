@@ -1,0 +1,10 @@
+
+<div class="nav">
+    {% for tab in site.data.header.tabs %}
+    <a href="{{ tab.to }}">
+        <div class="nav-item">
+            <h2 class="nav-text">{{ tab.text }}</h2>
+        </div>
+    </a>
+    {% endfor %}
+</div>

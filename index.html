@@ -1,0 +1,45 @@
+---
+permalink: /
+layout: index
+title: index-scripts
+---
+
+<div id="noscript">
+    <p style="text-align: center;">For a noscript version of this webpage, please visit <a href="/ns/">/ns/</a>, apologies for the inconvenience!</p>
+</div>
+<script>
+    document.getElementById("noscript").style.display = "none";
+</script>
+
+<!-- <div class="cv-selector">
+    <p class="cv-option" target="education">Education</p>
+    <p class="cv-option" target="experience">Experience</p>
+    <p class="cv-option" target="extracurricular">Extracurricular</p>
+    <p class="cv-option" target="research">Research</p>
+    <p class="cv-option" target="achievements">Achievements</p>
+    <p class="cv-option" target="competitions">Competitions</p>
+    <p class="cv-option" target="technologies">Technologies</p>
+    <p class="cv-option" target="operating_systems">Operating Systems</p>
+    <p class="cv-option" target="other_technologies">Other Technologies</p>
+</div> -->
+
+<div class="cv-sections">
+    {% include cv-section.html link="education" name="Education" enabled=false %}
+
+    {% include cv-section.html link="experience" name="Experience" %}
+
+    {% include cv-section.html link="extracurricular" name="Extracurricular" %}
+
+    {% include cv-section.html link="research" name="Research" %}
+
+    {% include cv-section.html link="achievements" name="Achievements" %}
+
+    {% include cv-section.html link="competitions" name="Competitions" %}
+
+    {% include cv-section.html link="technologies" name="Technologies" %}
+
+    {% include cv-section.html link="operating_systems" name="Operating Systems" %}
+
+    {% include cv-section.html link="other_technologies" name="Other Technologies" %}
+</div>
+{% asset index.js %}

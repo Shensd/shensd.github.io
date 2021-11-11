@@ -1,0 +1,14 @@
+---
+permalink: /posts/
+layout: default
+---
+
+<div class="container">
+    <h1>Blog Posts</h1>
+    <h3>I work on some weird projects in my free time, hopefully I write about them here.</h3>
+    <br/>
+    {% for post in site.posts %}
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.date  | date: '%B %d, %Y' }} - {{ post.tags | join: ", " }}</p>
+    {% endfor %}
+</div>

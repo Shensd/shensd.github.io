@@ -1,0 +1,12 @@
+{
+    "tabs": [
+        {
+            "text": "Home",
+            "to": "/"
+        },
+        {
+            "text": "Blog",
+            "to": "/posts/"
+        }
+    ]
+}

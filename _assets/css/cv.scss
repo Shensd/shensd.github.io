@@ -1,0 +1,63 @@
+@import "globals.sass";
+
+@keyframes slider {
+    0% { max-height: 0px }
+    95% { max-height: 200px }
+    100% { max-height: 600vh }
+}
+
+.cv-section-body {
+    max-height: 0px;
+    overflow: hidden;
+    // padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    // $target: all;
+    // $duration: 0.6s;
+    // $timing: ease;
+
+    // -webkit-transition: $target $duration $timing;
+	// -moz-transition: $target $duration $timing;
+    // -o-transition: $target $duration $timing;
+	// transition: $target $duration $timing;
+}
+
+.cv-section-body.cv-enabled {
+    display: block;
+    max-height: min-content; /* no reason for this number in specific, just needed a very large one */
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+    
+.cv-section-title {
+    padding-left: 1em;
+    // border: 1px solid white;
+    border-bottom: 1px solid white;
+    cursor:pointer;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cv-section-title:hover {
+    color: #ea91dd;
+
+    $target: all;
+    $duration: 0.4s;
+    $timing: ease;
+
+    -webkit-transition: $target $duration $timing;
+	-moz-transition: $target $duration $timing;
+    -o-transition: $target $duration $timing;
+	transition: $target $duration $timing;
+}
+.cv-section-title {
+    color: $text;
+}

@@ -1,0 +1,11 @@
+<div class="cv-section" id="ng-{{include.link}}" tab-name="{{include.name}}">
+    <!-- <a href="" class="cv-section-link"> -->
+        <div class="cv-section-title"><h1>{{include.name}}</h1></div>
+    <!-- </a> -->
+    <!-- <hr class="cv-divider"> -->
+    <div class="cv-section-body {% if include.enabled %} cv-enabled {% endif %}">
+{% markdown %}
+{% include cv/{{ include.link }}.md %}
+{% endmarkdown %}
+    </div>
+</div>
