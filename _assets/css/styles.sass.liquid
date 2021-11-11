@@ -1,0 +1,121 @@
+---
+---
+
+@charset "utf-8";
+
+// @import "bulma.sass";
+
+@import "globals.sass"
+
+
+body, html
+    min-height: 100vh;
+    margin: 0;
+
+body
+    padding: 0;
+    font-family: monospace;
+    background-color: $background;
+    color: $text;
+    display: flex;
+    flex-direction: column;
+
+.container
+    width: $site-width-full;
+    @media (max-width: $breakpoint-desktop)
+        width: $site-width-small
+    margin: 0 auto;
+
+.intro-card, .footer
+    text-align: center;
+    width: 100%;
+
+.container
+    flex: 1 0 auto; 
+.footer
+    flex-shrink: 0;
+    margin-bottom: 2em;
+
+
+.nav
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: $site-width-full;
+    @media (max-width: $breakpoint-desktop)
+        width: $site-width-small
+    margin: 0 auto;
+
+.nav-item
+    padding-right: 5em;
+
+h2, h3
+    font-weight: normal;
+
+a
+    text-decoration: none;
+    color: $link;
+
+a:visited
+    color: $link;
+
+a:hover, a:active
+    color: $link-active;
+
+h1
+    font-size: 2.7em;
+h2
+    font-size: 2em;
+h3
+    font-size: 1.7em;
+p, li
+    font-size: 1.3em;
+p *, li *, p code
+    font-size: 1em;
+code 
+    font-size: 1.2em;
+
+@media (max-width: $breakpoint-tablet)
+    h1
+        font-size: 2em;
+    h2
+        font-size: 1.8em;
+    h3
+        font-size: 1.5em;
+    p, li
+        font-size: 1.2em;
+    code 
+        font-size: 1em;
+
+.grid
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+.grid-item
+    width: 45%;
+    min-width: 340px;
+    max-width: 600px;
+
+    @media (max-width: $breakpoint-desktop)
+        width: 100%;
+        max-width: $breakpoint-desktop;
+
+.logo-cube
+    height: 16em;
+    width: 16em;
+    background-color: $link;
+    margin: 0 auto;
+    margin-top: 128px;
+    margin-bottom: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+.logo-cube > p
+    color: $background
+
+img 
+    max-width: 100%;
+    margin: 0 auto;

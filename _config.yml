@@ -1,0 +1,67 @@
+title: Jack Does Things
+email: jack@hance.xyz
+description: >- 
+  This is a repository of my escapades as a software developer, hacker, and tinkerer
+  of the parts of tech that most people don't think about. I'm a fan of C++, RFID, 
+  and the occasional CTF.
+tagline: This is a collection of things I have done and am capable of doing.
+baseurl: "/" 
+url: "http://test.thighsocks.net"
+github_username: shensd
+author: shensd
+defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      image: 
+        path: /logo.png
+        height: 1080
+        width: 1080
+  - 
+    scope:
+      path: "_posts"
+    values:
+      image: ""
+social:
+  name: Jack Hance
+  links:
+    https://github.com/Shensd
+    https://www.codewars.com/users/Shensd
+
+permalink: /posts/:categories/:title/
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+assets:
+  source_maps: true
+  destination: "/assets"
+  compression: true
+  gzip: false
+  defaults:
+    integrity:
+      {css,img,js}: false
+  caching:
+    enabled: true
+    path: ".jekyll-cache/assets"
+    type: file
+  precompile: []
+  raw_precompile: [
+    #
+  ]
+  cdn:
+    baseurl: false
+    destination: false
+    url: null
+  sources:
+    - _assets/fonts
+  plugins:
+    css: { autoprefixer: {} }
+    img: { optim: {} }
+
+kramdown:
+  smart_quotes:  ["apos", "apos", "quot", "quot"]

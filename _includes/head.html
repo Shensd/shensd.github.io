@@ -1,0 +1,11 @@
+<title>{{ site.title }}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+
+{% asset styles.css %}
+{% asset pygments/monokai-mod.css %}
+{% if page.title == "index-scripts" %}
+    {% asset cv.css %}
+{% endif %}
